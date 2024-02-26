@@ -57,5 +57,5 @@ tmux set -g window-status-current-format "#[fg=#44dfaf,bg=#24283B]   #[fg=#a9
 tmux set -g window-status-format "#[fg=#c0caf5,bg=default,none,dim]   $window_number #W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane}#[fg=yellow] #{?window_last_flag,󰁯 ,} "
 
 #+--- Bars RIGHT ---+
-tmux set -g status-right "$cmus_status$git_status$wb_git_status#[fg=#a9b1d6]  %H:%M"
+tmux set -g status-right "$cmus_status$git_status$wb_git_status#[fg=#a9b1d6]  %H:%M "
 tmux set -g window-status-separator ""
