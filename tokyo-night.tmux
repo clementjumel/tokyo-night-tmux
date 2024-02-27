@@ -52,9 +52,9 @@ tmux set -g status-left "#[fg=#1F2335,bg=#6441a5,bold] #{?client_prefix,󰠠 ,#[
 
 #+--- Windows ---+
 # Focus
-tmux set -g window-status-current-format "#[fg=#44dfaf,bg=#24283B]   #[fg=#a9b1d6]$window_number #[bold,nodim]#W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane} #{?window_last_flag,,} "
+tmux set -g window-status-current-format "#[fg=#44dfaf,bg=#24283B]  #[fg=#a9b1d6,bold,nodim]#W#[nobold,dim] $window_number  "
 # Unfocused
-tmux set -g window-status-format "#[fg=#c0caf5,bg=default,none,dim]   $window_number #W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane}#[fg=yellow] #{?window_last_flag,󰁯 ,} "
+tmux set -g window-status-format "#[fg=#c0caf5,bg=default,none,dim] #{?window_last_flag,#[fg=yellow]󰁯 #[fg=#c0caf5], }#W#[nobold,dim] $window_number  "
 
 #+--- Bars RIGHT ---+
 tmux set -g status-right "$cmus_status$git_status$wb_git_status#[fg=#a9b1d6]  %H:%M "
